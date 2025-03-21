@@ -123,7 +123,17 @@ public class Restaurante {
             System.out.print("\nDeseja fazer outro pedido? (s/n): ");
             String novoPedido = scanner.nextLine();
             if (novoPedido.equalsIgnoreCase("n")) {
-                break;
+                System.out.print("\nDigite s para deslogar e encerrar, e n para deslogar e realizar novo cadastro? (s/n): ");
+                String novoPedido2 = scanner.nextLine();
+                if(novoPedido2.equalsIgnoreCase("s")){
+                    break;
+                }else if (novoPedido2.equalsIgnoreCase("n")){
+                    clienteAtual = cadastrarNovoCliente(scanner);
+                }
+                else {
+                    System.out.println("Opção inválida saindo...");
+                    break;
+                }
             } else if (novoPedido.equalsIgnoreCase("s")){
                 System.out.println("\n\n======== NOVO PEDIDO ========");
                 System.out.println("Usando o mesmo cadastro (" + clienteAtual.getNome() + ")");
