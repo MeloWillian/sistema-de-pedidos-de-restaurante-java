@@ -100,8 +100,6 @@ public class Restaurante {
             }
             restaurante.realizarPedido(clienteAtual, itensPedido, formaPagamento, desconto);
 
-            System.out.println("\nImposto total devido: R$ " + restaurante.consultarImpostoDevido());
-
             System.out.println("\n========== AUDITORIA DE PEDIDOS ==========");
             List<Pedido> todosPedidos = restaurante.getPedidos();
             if (todosPedidos.isEmpty()) {
