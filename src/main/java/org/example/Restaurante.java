@@ -11,7 +11,7 @@ public class Restaurante {
     public Restaurante() {
         receitaFederal = new ReceitaFederal();
         cardapio = new ArrayList<>();
-        cardapio.add(new Item("PFzão do dia", 25.00));
+        cardapio.add(new Item("PFzão", 25.00));
         cardapio.add(new Item("Macarrão Carbonara", 22.0));
         cardapio.add(new Item("Coca 2l", 10.0));
         cardapio.add(new Item("Carne de Sol na Nata", 35.00));
