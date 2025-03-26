@@ -16,6 +16,7 @@ public class Restaurante {
         cardapio.add(new Item("Coca 2l", 10.0));
         cardapio.add(new Item("Carne de Sol na Nata", 35.00));
         cardapio.add(new Item("Macarrão com linguiça", 17.0));
+        cardapio.add(new Item("feijoada", 30.0));
         cardapio.add(new Item("Refrigerante 1l", 5.0));
     }
 
